@@ -1,6 +1,13 @@
 # CHEMANE Platform
 
-This page is related to the Wiki of the Cooperative Human sEMantic dAta maNagement & Exploitation (CHEMANE) platform. CHEMANE platform is composed of several modules ([MFS4UDB](https://forge.lias-lab.fr/projects/mfs4udb), [QaRS](https://forge.lias-lab.fr/projects/qars), [QaRS4UKB](https://forge.lias-lab.fr/projects/qars4ukb) and [TMA4KB](https://forge.lias-lab.fr/projects/tma4kb)). Each module supplies several algorithms developped by the members of LIAS Laboratory.
+This page is related to the Cooperative Human sEMantic dAta maNagement & Exploitation (CHEMANE) platform. CHEMANE platform is composed of several modules ([MFS4UDB](https://forge.lias-lab.fr/projects/mfs4udb), [QaRS](https://forge.lias-lab.fr/projects/qars), [QaRS4UKB](https://forge.lias-lab.fr/projects/qars4ukb) and [TMA4KB](https://forge.lias-lab.fr/projects/tma4kb)). Each module supplies several algorithms developped by the members of LIAS Laboratory.
+
+This repository is a top-level project to introduce the ecosystem of CHEMANE. The dedicated CHEMANE modules are following:
+
+* [MFS4UDB](https://forge.lias-lab.fr/projects/mfs4udb): this module deals with the empty-answer problem in the uncertain relational database (SQL) context by proposing efficient approaches to find Minimal Failing Subqueries (MFSs) and maXimal Succeeding Subqueries (XSSs) of failing conjunctive queries.
+* [QaRS](https://forge.lias-lab.fr/projects/qars): this module gives explanation for the failure of a SPARQL query and it performs relaxation of a SPARQL query in order to return top-k alternative answers.
+* [QaRS4UKB](https://forge.lias-lab.fr/projects/qars4ukb): this module computes αMFSs and αXSSs of a failing RDF query for a given threshold α (αLBA algorithm) and it computes αMFSs and αXSSs of a failing RDF query for several thresholds (NLBA, Bottom-Up, Top-Down and Hybrid algorithm).
+* [TMA4KB](https://forge.lias-lab.fr/projects/tma4kb): this modules provides four algorithms: *Base* algorithm executes all subqueries of a failing query, *BFS* algorithm does not execute queries that have a succeedign superquery, *Var* algorithm  BFS + uses a variable-based property to deduce query failure, *Card* algorithm Var + uses a cardinality-based property to deduce query failure.
 
 ## Publications
 
@@ -47,15 +54,6 @@ This page is related to the Wiki of the Cooperative Human sEMantic dAta maNageme
 * Ibrahim Dellal. Gestion et exploitation de larges bases de connaissances en présence de données incomplètes et incertaines. Autre [cs.OH]. ISAE-ENSMA Ecole Nationale Supérieure de Mécanique et d'Aérotechique - Poitiers, 2019. Français.
 
 * Géraud Fokou. Conception d'un famework pour la relaxation des requêtes SPARQL. Autre [cs.OH]. ISAE-ENSMA Ecole Nationale Supérieure de Mécanique et d'Aérotechique - Poitiers, 2016. Français.
-
-## CHEMANE ecosystem
-
-Dedicated CHEMANE modules are following:
-
-* [MFS4UDB](https://forge.lias-lab.fr/projects/mfs4udb): this module deals with the empty-answer problem in the uncertain relational database (SQL) context by proposing efficient approaches to find Minimal Failing Subqueries (MFSs) and maXimal Succeeding Subqueries (XSSs) of failing conjunctive queries.
-* [QaRS](https://forge.lias-lab.fr/projects/qars): this module gives explanation for the failure of a SPARQL query and it performs relaxation of a SPARQL query in order to return top-k alternative answers.
-* [QaRS4UKB](https://forge.lias-lab.fr/projects/qars4ukb): this module computes αMFSs and αXSSs of a failing RDF query for a given threshold α (αLBA algorithm) and it computes αMFSs and αXSSs of a failing RDF query for several thresholds (NLBA, Bottom-Up, Top-Down and Hybrid algorithm).
-* [TMA4KB](https://forge.lias-lab.fr/projects/tma4kb): this modules provides four algorithms: *Base* algorithm executes all subqueries of a failing query, *BFS* algorithm does not execute queries that have a succeedign superquery, *Var* algorithm  BFS + uses a variable-based property to deduce query failure, *Card* algorithm Var + uses a cardinality-based property to deduce query failure.
 
 ## Historic Contributors (alphabetical order)
 
